@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cannabis Madrid - Premium Dispensary</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Cannabis Madrid - Premium dispensary offering quality cannabis products, expert consultation, and discrete delivery across Madrid. Visit our Gran Vía location for flower, edibles, concentrates, and accessories.">
+  <meta name="keywords"
+    content="cannabis madrid, dispensary madrid, cannabis spain, marijuana madrid, cannabis products, cannabis consultation, madrid dispensary, weed madrid, weed club madrid, night out madrid, best places to go madrid">
+  <meta name="author" content="Cannabis Madrid">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="en">
+  <meta name="geo.region" content="ES-MD">
+  <meta name="geo.placename" content="Madrid">
+  <meta name="geo.position" content="40.4168;-3.7038">
+  <meta name="ICBM" content="40.4168, -3.7038">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Cannabis Madrid - Premium Dispensary">
+  <meta property="og:description" content="Premium cannabis products and expert guidance in the heart of Madrid">
+  <meta property="og:type" content="business.business">
+  <meta property="og:url" content="https://cannabismadrid.com">
+  <meta property="og:image" content="https://cannabismadrid.com/images/og-image.jpg">
+  <meta property="og:site_name" content="Cannabis Madrid">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cannabis Madrid - Premium Dispensary">
+  <meta name="twitter:description" content="Premium cannabis products and expert guidance in the heart of Madrid">
+  <meta name="twitter:image" content="https://cannabismadrid.com/images/twitter-image.jpg">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://cannabismadrid.com">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <!-- Fonts -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/main-Ctr8iBEM.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-DdL18aPe.css">
+</head>
+
+<body>
+  <!-- Age Verification Modal -->
+  <div id="ageVerificationModal" class="age-modal-overlay">
+    <div class="age-modal">
+      <div class="age-modal-content">
+        <div class="age-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h2>Age Verification Required</h2>
+        <p>You must be 18 years or older to access this website.</p>
+        <p class="age-warning">This website contains content related to cannabis products. By entering, you confirm that
+          you are of legal age in your jurisdiction.</p>
+        <div class="age-modal-buttons">
+          <button id="ageConfirm" class="btn btn-primary">I am 18 or older</button>
+          <button id="ageDeny" class="btn btn-secondary">I am under 18</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookieBanner" class="cookie-banner">
+    <div class="cookie-banner-content">
+      <div class="cookie-text">
+        <i class="fas fa-cookie-bite"></i>
+        <div>
+          <h3>Cookie Consent</h3>
+          <p>We use cookies to enhance your browsing experience and analyze site traffic. By clicking "Accept All", you
+            consent to our use of cookies.</p>
+        </div>
+      </div>
+      <div class="cookie-buttons">
+        <button id="cookieSettings" class="btn btn-outline">Settings</button>
+        <button id="cookieReject" class="btn btn-outline">Reject All</button>
+        <button id="cookieAccept" class="btn btn-primary">Accept All</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Settings Modal -->
+  <div id="cookieSettingsModal" class="cookie-settings-modal">
+    <div class="cookie-settings-content">
+      <div class="cookie-settings-header">
+        <h2>Cookie Settings</h2>
+        <button id="closeCookieSettings" class="close-btn">&times;</button>
+      </div>
+      <div class="cookie-settings-body">
+        <p>Manage your cookie preferences. You can enable or disable different types of cookies below.</p>
+
+        <div class="cookie-category">
+          <div class="cookie-category-header">
+            <h3>Essential Cookies</h3>
+            <label class="cookie-toggle">
+              <input type="checkbox" id="essentialCookies" checked disabled>
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+          <p>These cookies are necessary for the website to function and cannot be switched off.</p>
+        </div>
+
+        <div class="cookie-category">
+          <div class="cookie-category-header">
+            <h3>Analytics Cookies</h3>
+            <label class="cookie-toggle">
+              <input type="checkbox" id="analyticsCookies">
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+          <p>These cookies help us understand how visitors interact with our website.</p>
+        </div>
+
+        <div class="cookie-category">
+          <div class="cookie-category-header">
+            <h3>Marketing Cookies</h3>
+            <label class="cookie-toggle">
+              <input type="checkbox" id="marketingCookies">
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+          <p>These cookies are used to deliver personalized advertisements.</p>
+        </div>
+      </div>
+      <div class="cookie-settings-footer">
+        <button id="saveCookieSettings" class="btn btn-primary">Save Preferences</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h2><a href="index.html" style="text-decoration: none; color: inherit;">Cannabis Madrid</a></h2>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active" data-translate="nav.home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link" data-translate="nav.about">About</a>
+        </li>
+      </ul>
+      <div class="language-switcher">
+        <button class="lang-btn active" data-lang="en" title="English">🇺🇸</button>
+        <button class="lang-btn" data-lang="es" title="Español">🇪🇸</button>
+        <button class="lang-btn" data-lang="de" title="Deutsch">🇩🇪</button>
+        <button class="lang-btn" data-lang="pt" title="Português">🇵🇹</button>
+        <button class="lang-btn" data-lang="it" title="Italiano">🇮🇹</button>
+      </div>
+      <div class="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero relative h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <picture>
+        <source type="image/webp"
+          srcset="images/IMG_8492-400w.webp 400w, images/IMG_8492-800w.webp 800w, images/IMG_8492-1200w.webp 1200w, images/IMG_8492-1600w.webp 1600w, images/IMG_8492.webp 4032w"
+          sizes="100vw">
+        <img src="images/IMG_8492.jpg" alt="Cannabis Madrid Club" class="w-full h-full object-cover opacity-60"
+          loading="eager">
+      </picture>
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    </div>
+
+    <div class="hero-content relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+      <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6 tracking-wide" data-translate="home.title">The Premier
+        Cannabis Club</h1>
+      <p class="text-xl md:text-2xl font-light mb-10 tracking-wider" data-translate="home.subtitle">Exclusivity.
+        Quality. Community.</p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/34632332050" target="_blank"
+          class="btn btn-primary bg-cannabis-accent hover:bg-cannabis-light text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 uppercase tracking-widest text-sm font-semibold">
+          Request Membership
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Album Gallery Section -->
+  <section id="gallery" class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Our Space</h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">Step inside Cannabis Madrid and discover our carefully
+          crafted environment designed for your comfort and enjoyment</p>
+      </div>
+
+      <!-- Photo Album Container -->
+      <div class="relative max-w-4xl mx-auto">
+        <!-- Single Image Carousel -->
+        <div class="relative overflow-hidden rounded-2xl shadow-2xl">
+          <div class="carousel-container relative">
+            <!-- Image 1 -->
+            <div class="carousel-slide active">
+              <div class="relative group">
+                <picture>
+                  <source type="image/webp"
+                    srcset="images/IMG_8493-400w.webp 400w, images/IMG_8493-800w.webp 800w, images/IMG_8493-1200w.webp 1200w, images/IMG_8493-1600w.webp 1600w, images/IMG_8493.webp 4032w"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px">
+                  <img src="images/IMG_8493.jpg" alt="Cannabis Madrid Interior Design"
+                    class="w-full h-96 md:h-[500px] object-cover transition-all duration-500" loading="lazy">
+                </picture>
+                <div
+                  class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300">
+                </div>
+                <div
+                  class="absolute bottom-6 left-6 text-white opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <h3 class="text-2xl font-bold">Interior Design</h3>
+                  <p class="text-lg">Modern industrial aesthetic with artistic flair</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="carousel-slide">
+              <div class="relative group">
+                <picture>
+                  <source type="image/webp"
+                    srcset="images/IMG_8495-400w.webp 400w, images/IMG_8495-800w.webp 800w, images/IMG_8495-1200w.webp 1200w, images/IMG_8495-1600w.webp 1600w, images/IMG_8495.webp 4032w"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px">
+                  <img src="images/IMG_8495.jpg" alt="Cannabis Madrid Atmosphere"
+                    class="w-full h-96 md:h-[500px] object-cover transition-all duration-500" loading="lazy">
+                </picture>
+                <div
+                  class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300">
+                </div>
+                <div
+                  class="absolute bottom-6 left-6 text-white opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <h3 class="text-2xl font-bold">Atmosphere</h3>
+                  <p class="text-lg">Cozy and inviting ambiance</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="carousel-slide">
+              <div class="relative group">
+                <picture>
+                  <source type="image/webp"
+                    srcset="images/IMG_8497-400w.webp 400w, images/IMG_8497-800w.webp 800w, images/IMG_8497-1200w.webp 1200w, images/IMG_8497-1600w.webp 1600w, images/IMG_8497.webp 5712w"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px">
+                  <img src="images/IMG_8497.jpg" alt="Cannabis Madrid Experience"
+                    class="w-full h-96 md:h-[500px] object-cover transition-all duration-500" loading="lazy">
+                </picture>
+                <div
+                  class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300">
+                </div>
+                <div
+                  class="absolute bottom-6 left-6 text-white opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <h3 class="text-2xl font-bold">Experience</h3>
+                  <p class="text-lg">Premium customer service and comfort</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll Indicators -->
+        <div class="flex justify-center mt-8 space-x-2">
+          <button
+            class="carousel-dot w-3 h-3 rounded-full bg-cannabis-green opacity-50 hover:opacity-100 transition-opacity duration-300"
+            data-target="0"></button>
+          <button
+            class="carousel-dot w-3 h-3 rounded-full bg-cannabis-green opacity-30 hover:opacity-100 transition-opacity duration-300"
+            data-target="1"></button>
+          <button
+            class="carousel-dot w-3 h-3 rounded-full bg-cannabis-green opacity-30 hover:opacity-100 transition-opacity duration-300"
+            data-target="2"></button>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button
+          class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110"
+          id="prevBtn">
+          <i class="fas fa-chevron-left text-cannabis-green text-xl"></i>
+        </button>
+        <button
+          class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110"
+          id="nextBtn">
+          <i class="fas fa-chevron-right text-cannabis-green text-xl"></i>
+        </button>
+      </div>
+
+      <!-- Gallery Description -->
+      <div class="mt-16 text-center">
+        <div class="max-w-4xl mx-auto">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-6">Experience Cannabis Madrid</h3>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            Our space combines modern industrial design with warm, welcoming elements to create the perfect environment
+            for your cannabis journey.
+            From our carefully curated product displays to our comfortable seating areas, every detail has been
+            thoughtfully designed to enhance your experience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership Section -->
+  <section id="membership" class="membership">
+    <div class="container">
+      <div class="membership-content">
+        <div class="membership-badge">
+          <i class="fas fa-star"></i>
+          <span>Exclusive Members-Only Club</span>
+        </div>
+        <h2>Become a Member</h2>
+        <p class="lead">Cannabis Madrid is an exclusive members-only club. To join our community and gain access to our
+          premium space and products, please reach out to us via WhatsApp.</p>
+
+        <div class="membership-features">
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="feature-content">
+              <h3>Premium Products</h3>
+              <p>Access to the finest cannabis products</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="feature-content">
+              <h3>Exclusive Space</h3>
+              <p>Member-only access to our premium lounge</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="feature-content">
+              <h3>Expert Guidance</h3>
+              <p>Professional consultation and support</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="feature-content">
+              <h3>Community</h3>
+              <p>Join our network of like-minded individuals</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="membership-cta">
+          <a href="https://wa.me/34632332050" target="_blank" class="btn btn-primary btn-large">
+            <i class="fab fa-whatsapp"></i>
+            <span>Contact Us on WhatsApp to Join</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>About Cannabis Madrid</h2>
+          <p>Located in the vibrant heart of Madrid, we're committed to providing premium cannabis products with expert
+            guidance. Our knowledgeable staff helps you find the perfect products for your needs, whether you're new to
+            cannabis or a seasoned enthusiast.</p>
+        </div>
+        <div class="about-image">
+          <div class="about-placeholder">
+            <i class="fas fa-users"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Cannabis Madrid</h3>
+          <p>Madrid's premier dispensary for premium cannabis products and expert guidance.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Cannabis Madrid. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Icon -->
+  <div class="whatsapp-float">
+    <a href="https://wa.me/34632332050" target="_blank" class="whatsapp-link">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Cannabis Madrid",
+        "description": "Premium members-only cannabis club offering quality products and expert consultation",
+        "url": "https://cannabismadrid.com",
+        "areaServed": {
+            "@type": "City",
+            "name": "Madrid"
+        },
+        "sameAs": [
+            "https://www.facebook.com/cannabismadrid",
+            "https://www.instagram.com/cannabismadrid",
+            "https://wa.me/34632332050"
+        ]
+    }
+    </script>
+
+
+  <!-- Carousel Functionality -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const slides = document.querySelectorAll('.carousel-slide');
+      const dots = document.querySelectorAll('.carousel-dot');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      let currentSlide = 0;
+      const totalSlides = slides.length;
+
+      if (slides.length === 0) return;
+
+      // Show specific slide
+      function showSlide(index) {
+        // Hide all slides
+        slides.forEach(slide => {
+          slide.classList.remove('active');
+          slide.style.display = 'none';
+        });
+
+        // Show current slide
+        slides[index].classList.add('active');
+        slides[index].style.display = 'block';
+
+        // Update dots
+        dots.forEach((dot, i) => {
+          if (i === index) {
+            dot.classList.remove('opacity-30');
+            dot.classList.add('opacity-50');
+          } else {
+            dot.classList.remove('opacity-50');
+            dot.classList.add('opacity-30');
+          }
+        });
+
+        currentSlide = index;
+      }
+
+      // Next slide
+      function nextSlide() {
+        const next = (currentSlide + 1) % totalSlides;
+        showSlide(next);
+      }
+
+      // Previous slide
+      function prevSlide() {
+        const prev = (currentSlide - 1 + totalSlides) % totalSlides;
+        showSlide(prev);
+      }
+
+      // Dot click handlers
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          showSlide(index);
+        });
+      });
+
+      // Arrow button handlers
+      if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+      if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+
+      // Initialize
+      showSlide(0);
+    });
+  </script>
+</body>
+
+</html>
